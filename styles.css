@@ -8,6 +8,9 @@
 
 :root {
   --twitter-blue: #1da1f2;
+  --extra-light-gray: #f5f8fa;
+  --border-color: #f3f4f6;
+  --light-gray: #e1e8ed;
 }
 
 body {
@@ -26,9 +29,13 @@ body {
   color: #111;
 }
 
-#logo,
 .home-svg {
   fill: var(--twitter-blue);
+}
+
+#logo {
+  fill: var(--twitter-blue);
+  margin-top: 0.5rem;
 }
 
 #nav-pills .home-link {
@@ -99,9 +106,9 @@ body {
 
 .grid-container {
   display: grid;
-  max-width: 95%;
+  max-width: 93%;
   margin: auto;
-  grid-template-columns: 1fr 3fr 2fr;
+  grid-template-columns: 1.25fr 3.8fr 1.2fr;
   grid-gap: 1.5rem;
 }
 
@@ -131,6 +138,7 @@ body {
 }
 
 #home-title {
+  font-size: 1.1rem;
   margin: 0;
 }
 
@@ -140,6 +148,12 @@ body {
 
 #header {
   margin: 0.4rem 0 0.8rem;
+  padding: 0 1.5rem 0.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+#tweet-space {
+  padding: 0 1.5rem 0.5rem;
 }
 
 #new-tweet {
@@ -171,8 +185,7 @@ body {
 }
 
 #new-tweet-container {
-  padding: 0 1.5rem 0.5rem;
-  border: 1px solid #f3f4f6;
+  border: 1px solid var(--border-color);
 }
 
 #new-tweet p {
@@ -181,14 +194,88 @@ body {
 
 #empty-div {
   height: 10px;
-  background-color: #e1e8ed;
+  background-color: var(--extra-light-gray);
 }
 
 .tweet-article {
   display: flex;
+  border: 1px solid var(--border-color);
+  padding: 1rem;
 }
 
-/* .tweet-feed {
+hr {
+  border: 1px solid var(--border-color);
+}
+
+.tweet-feed {
+  margin-left: 1rem;
+}
+
+.user-details {
   display: flex;
-  flex-direction: column;
-} */
+}
+
+.multi-option {
+  margin-left: 12rem;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.user-reaction {
+  margin-left: 4.2rem;
+}
+
+.reaction-no {
+  margin-left: 0.5rem;
+}
+
+.post-time {
+  margin-left: 0.5rem;
+  font-weight: 300;
+}
+
+.twitter-handle {
+  font-weight: 300;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  margin-top: 0.5rem;
+  background-color: var(--light-gray);
+}
+
+.search-icon {
+  fill: #666;
+}
+
+#search-container {
+  padding: 0.6rem 0.3rem;
+}
+
+input {
+  border: none;
+  background-color: var(--light-gray);
+  padding: 0.6rem 0;
+}
+
+input::placeholder {
+  font-size: 0.95rem;
+}
+
+.heading-1 {
+  display: flex;
+}
+
+.desc-img {
+  width: 68px;
+  height: 68px;
+  border-radius: 10px;
+}
+
+.trend-title {
+  font-weight: bold;
+}
