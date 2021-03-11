@@ -12,7 +12,7 @@
       <nav id="navigation">
         <div class="nav-container">
           <div class="nav-brand">
-            <svg viewBox="0 0 24 24" width="46" height="30">
+            <svg viewBox="0 0 24 24" width="46" height="30" id="logo">
               <g>
                 <path
                   d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"
@@ -21,17 +21,22 @@
             </svg>
           </div>
           <ul id="nav-pills">
-            <li>
-              <svg viewBox="0 0 24 24" width="26.25" height="26.25">
+            <li class="nav-item">
+              <svg
+                viewBox="0 0 24 24"
+                width="26.25"
+                height="26.25"
+                class="home-svg"
+              >
                 <g>
                   <path
                     d="M22.58 7.35L12.475 1.897c-.297-.16-.654-.16-.95 0L1.425 7.35c-.486.264-.667.87-.405 1.356.18.335.525.525.88.525.16 0 .324-.038.475-.12l.734-.396 1.59 11.25c.216 1.214 1.31 2.062 2.66 2.062h9.282c1.35 0 2.444-.848 2.662-2.088l1.588-11.225.737.398c.485.263 1.092.082 1.354-.404.263-.486.08-1.093-.404-1.355zM12 15.435c-1.795 0-3.25-1.455-3.25-3.25s1.455-3.25 3.25-3.25 3.25 1.455 3.25 3.25-1.455 3.25-3.25 3.25z"
                   ></path>
                 </g>
               </svg>
-              <a href="#" class="link">Home</a>
+              <a href="#" class="link home-link">Home</a>
             </li>
-            <li>
+            <li class="nav-item">
               <svg viewBox="0 0 24 24" width="26.25" height="26.25">
                 <g>
                   <path
@@ -41,7 +46,7 @@
               </svg>
               <a href="#" class="link">Explore</a>
             </li>
-            <li>
+            <li class="nav-item">
               <svg viewBox="0 0 24 24" width="26.25" height="26.25">
                 <g>
                   <path
@@ -51,7 +56,7 @@
               </svg>
               <a href="#" class="link">Notifications</a>
             </li>
-            <li>
+            <li class="nav-item">
               <svg viewBox="0 0 24 24" width="26.25" height="26.25">
                 <g>
                   <path
@@ -61,7 +66,7 @@
               </svg>
               <a href="#" class="link">Messages</a>
             </li>
-            <li>
+            <li class="nav-item">
               <svg viewBox="0 0 24 24" width="26.25" height="26.25">
                 <g>
                   <path
@@ -71,7 +76,7 @@
               </svg>
               <a href="#" class="link">Bookmarks</a>
             </li>
-            <li>
+            <li class="nav-item">
               <svg viewBox="0 0 24 24" width="26.25" height="26.25">
                 <g>
                   <path
@@ -84,7 +89,7 @@
               </svg>
               <a href="#" class="link">Lists</a>
             </li>
-            <li>
+            <li class="nav-item">
               <svg viewBox="0 0 24 24" width="26.25" height="26.25">
                 <g>
                   <path
@@ -94,7 +99,7 @@
               </svg>
               <a href="#" class="link">Profile</a>
             </li>
-            <li>
+            <li class="nav-item">
               <svg viewBox="0 0 24 24" width="26.25" height="26.25">
                 <g>
                   <circle cx="17" cy="12" r="1.5"></circle>
@@ -109,19 +114,26 @@
             </li>
           </ul>
 
-          <button>Tweet</button>
+          <button class="tweet-btn primary">Tweet</button>
 
           <div class="user-profile">
-            <img
-              class="user-avatar"
-              src="https://pbs.twimg.com/profile_images/1326427887369658378/llS9JzMG_400x400.jpg"
-              alt=""
-            />
-            <div class="user-info">
-              <div>Ganesh Gajula</div>
-              <div>@ganeshgajula</div>
+            <div id="profile-container">
+              <img
+                class="user-avatar"
+                src="https://pbs.twimg.com/profile_images/1326427887369658378/llS9JzMG_400x400.jpg"
+                alt=""
+              />
+              <div class="user-info">
+                <div id="userName">Ganesh Gajula</div>
+                <div>@ganeshgajula_</div>
+              </div>
             </div>
-            <svg>
+            <svg
+              viewBox="0 0 24 24"
+              width="18.75"
+              height="18.75"
+              id="user-option"
+            >
               <g>
                 <circle cx="5" cy="12" r="2"></circle>
                 <circle cx="12" cy="12" r="2"></circle>
@@ -133,11 +145,19 @@
       </nav>
 
       <main>
-        <div id="header">
-          <div>
-            <h2>Home</h2>
+        <div id="new-tweet-container">
+          <div id="header">
+            <div>
+              <h2 id="home-title">Home</h2>
+            </div>
+
             <span
-              ><svg viewBox="0 0 24 24" width="22.5" height="22.5">
+              ><svg
+                viewBox="0 0 24 24"
+                width="22.5"
+                height="22.5"
+                id="title-icon"
+              >
                 <g>
                   <path
                     d="M22.772 10.506l-5.618-2.192-2.16-6.5c-.102-.307-.39-.514-.712-.514s-.61.207-.712.513l-2.16 6.5-5.62 2.192c-.287.112-.477.39-.477.7s.19.585.478.698l5.62 2.192 2.16 6.5c.102.306.39.513.712.513s.61-.207.712-.513l2.16-6.5 5.62-2.192c.287-.112.477-.39.477-.7s-.19-.585-.478-.697zm-6.49 2.32c-.208.08-.37.25-.44.46l-1.56 4.695-1.56-4.693c-.07-.21-.23-.38-.438-.462l-4.155-1.62 4.154-1.622c.208-.08.37-.25.44-.462l1.56-4.693 1.56 4.694c.07.212.23.382.438.463l4.155 1.62-4.155 1.622zM6.663 3.812h-1.88V2.05c0-.414-.337-.75-.75-.75s-.75.336-.75.75v1.762H1.5c-.414 0-.75.336-.75.75s.336.75.75.75h1.782v1.762c0 .414.336.75.75.75s.75-.336.75-.75V5.312h1.88c.415 0 .75-.336.75-.75s-.335-.75-.75-.75zm2.535 15.622h-1.1v-1.016c0-.414-.335-.75-.75-.75s-.75.336-.75.75v1.016H5.57c-.414 0-.75.336-.75.75s.336.75.75.75H6.6v1.016c0 .414.335.75.75.75s.75-.336.75-.75v-1.016h1.098c.414 0 .75-.336.75-.75s-.336-.75-.75-.75z"
@@ -146,22 +166,19 @@
               </svg>
             </span>
           </div>
-        </div>
 
-        <div id="tweet-space">
-          <div>
-            <img
-              class="user-avatar-lg"
-              src="https://pbs.twimg.com/profile_images/1326427887369658378/llS9JzMG_400x400.jpg"
-              alt=""
-            />
-          </div>
-          <div id="new-tweet">
-            <p>What's happening?</p>
-
-            <div>
-              <div>
-                <span
+          <div id="tweet-space">
+            <div id="new-tweet">
+              <img
+                class="user-avatar-lg"
+                src="https://pbs.twimg.com/profile_images/1326427887369658378/llS9JzMG_400x400.jpg"
+                alt=""
+              />
+              <p>What's happening?</p>
+            </div>
+            <div id="upload-options">
+              <div id="upload-icons">
+                <span class="up-icon"
                   ><svg viewBox="0 0 24 24" width="22.5" height="22.5">
                     <g>
                       <path
@@ -171,7 +188,7 @@
                     </g>
                   </svg>
                 </span>
-                <span
+                <span class="up-icon"
                   ><svg viewBox="0 0 24 24" width="22.5" height="22.5">
                     <g>
                       <path
@@ -183,7 +200,7 @@
                     </g>
                   </svg>
                 </span>
-                <span>
+                <span class="up-icon">
                   <svg viewBox="0 0 24 24" width="22.5" height="22.5">
                     <g>
                       <path
@@ -192,7 +209,7 @@
                     </g>
                   </svg>
                 </span>
-                <span>
+                <span class="up-icon">
                   <svg viewBox="0 0 24 24" width="22.5" height="22.5">
                     <g>
                       <path
@@ -206,7 +223,7 @@
                     </g>
                   </svg>
                 </span>
-                <span>
+                <span class="up-icon">
                   <svg viewBox="0 0 24 24" width="22.5" height="22.5">
                     <g>
                       <path
@@ -225,22 +242,21 @@
                   </svg>
                 </span>
               </div>
-              <div>
-                <button class="tweet-btn secondary">Tweet</button>
-              </div>
+
+              <button class="tweet-btn secondary">Tweet</button>
             </div>
           </div>
         </div>
 
+        <div id="empty-div"></div>
         <article class="tweet-article">
-          <div>
-            <img
-              class="user-avatar-lg"
-              src="https://pbs.twimg.com/profile_images/1326427887369658378/llS9JzMG_400x400.jpg"
-              alt=""
-            />
-          </div>
-          <div>
+          <img
+            class="user-avatar-lg"
+            src="https://pbs.twimg.com/profile_images/1326427887369658378/llS9JzMG_400x400.jpg"
+            alt=""
+          />
+
+          <div class="tweet-feed">
             <div>
               Ganesh Gajula <span>@ganeshgajula_</span><span>• 1h</span>
             </div>
@@ -293,14 +309,13 @@
           </div>
         </article>
         <article class="tweet-article">
-          <div>
-            <img
-              class="user-avatar-lg"
-              src="https://pbs.twimg.com/profile_images/1326427887369658378/llS9JzMG_400x400.jpg"
-              alt=""
-            />
-          </div>
-          <div>
+          <img
+            class="user-avatar-lg"
+            src="https://pbs.twimg.com/profile_images/1326427887369658378/llS9JzMG_400x400.jpg"
+            alt=""
+          />
+
+          <div class="tweet-feed">
             <div>
               Ganesh Gajula <span>@ganeshgajula_</span><span>• 1h</span>
             </div>
@@ -356,14 +371,13 @@
           </div>
         </article>
         <article class="tweet-article">
-          <div>
-            <img
-              class="user-avatar-lg"
-              src="https://pbs.twimg.com/profile_images/1326427887369658378/llS9JzMG_400x400.jpg"
-              alt=""
-            />
-          </div>
-          <div>
+          <img
+            class="user-avatar-lg"
+            src="https://pbs.twimg.com/profile_images/1326427887369658378/llS9JzMG_400x400.jpg"
+            alt=""
+          />
+
+          <div class="tweet-feed">
             <div>
               Ganesh Gajula <span>@ganeshgajula_</span><span>• 1h</span>
             </div>
@@ -418,14 +432,13 @@
           </div>
         </article>
         <article class="tweet-article">
-          <div>
-            <img
-              class="user-avatar-lg"
-              src="https://pbs.twimg.com/profile_images/1326427887369658378/llS9JzMG_400x400.jpg"
-              alt=""
-            />
-          </div>
-          <div>
+          <img
+            class="user-avatar-lg"
+            src="https://pbs.twimg.com/profile_images/1326427887369658378/llS9JzMG_400x400.jpg"
+            alt=""
+          />
+
+          <div class="tweet-feed">
             <div>
               Ganesh Gajula <span>@ganeshgajula_</span><span>• 1h</span>
             </div>
@@ -552,6 +565,7 @@
             </div>
             <div class="suggest-1">
               <img
+                class="sg-img"
                 src="https://pbs.twimg.com/profile_images/1321163587679784960/0ZxKlEKB_x96.jpg"
                 alt=""
               />
@@ -572,6 +586,7 @@
             </div>
             <div class="suggest-2">
               <img
+                class="sg-img"
                 src="https://pbs.twimg.com/profile_images/1364491704817098753/V22-Luf7_x96.jpg"
                 alt=""
               />
