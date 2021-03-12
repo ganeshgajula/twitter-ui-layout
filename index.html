@@ -601,12 +601,12 @@
         </div>
 
         <section>
-          <div class="treding-card">
+          <div class="trending-card">
             <div class="heading">
               <h2>What's happening</h2>
             </div>
-            <div class="heading-1">
-              <div>
+            <div class="thead heading-1">
+              <div class="trend-info">
                 <span class="trend-desc">COVID-19 • LIVE</span>
                 <span class="trend-title">COVID-19 in India</span>
               </div>
@@ -616,11 +616,11 @@
                 alt=""
               />
             </div>
-            <div class="heading-2">
-              <div>
-                <span>Trending in India</span>
-                <span>#Zomato</span>
-                <span>4,100 Tweets</span>
+            <div class="thead heading-2">
+              <div class="trend-info">
+                <span class="trend-nation">Trending in India</span>
+                <span class="trend-title">#Zomato</span>
+                <span class="trend-tcount">4,100 Tweets</span>
               </div>
               <svg viewBox="0 0 24 24" width="18.75" height="18.75">
                 <g>
@@ -630,11 +630,11 @@
                 </g>
               </svg>
             </div>
-            <div class="heading-3">
-              <div>
-                <span>Trending in India</span>
-                <span>#Mahashivratri</span>
-                <span>1,433 Tweets</span>
+            <div class="thead heading-3">
+              <div class="trend-info">
+                <span class="trend-nation">Trending in India</span>
+                <span class="trend-title">#Mahashivratri</span>
+                <span class="trend-tcount">1,433 Tweets</span>
               </div>
               <svg viewBox="0 0 24 24" width="18.75" height="18.75">
                 <g>
@@ -644,8 +644,8 @@
                 </g>
               </svg>
             </div>
-            <div>
-              <span>Show More</span>
+            <div id="more-trends">
+              <span class="show-more">Show More</span>
             </div>
           </div>
         </section>
@@ -653,52 +653,68 @@
         <section>
           <div class="suggestion-card">
             <div class="heading-title">
-              <h2>Who to follow</h2>
+              <h2 id="follow-heading">Who to follow</h2>
             </div>
-            <div class="suggest-1">
+            <div class="suggest suggest-1">
               <img
                 class="sg-img"
                 src="https://pbs.twimg.com/profile_images/1321163587679784960/0ZxKlEKB_x96.jpg"
                 alt=""
               />
-              <div>
-                <span>
-                  NASA
-                  <svg viewBox="0 0 24 24" width="16.25" height="16.25">
+
+              <div class="user-data">
+                <div>
+                  <span class="og-name"> NASA </span>
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="16.25"
+                    height="16.25"
+                    class="tick-icon"
+                  >
                     <g>
                       <path
                         d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"
                       ></path>
                     </g>
                   </svg>
-                </span>
-                <span> @NASA </span>
+                </div>
+                <span class="og-id"> @NASA </span>
               </div>
-              <button>Follow</button>
+
+              <button class="follow-btn fb-1">Follow</button>
             </div>
-            <div class="suggest-2">
+            <div class="suggest suggest-2">
               <img
                 class="sg-img"
                 src="https://pbs.twimg.com/profile_images/1364491704817098753/V22-Luf7_x96.jpg"
                 alt=""
               />
-              <div>
-                <span>
-                  Elon Musk
-                  <svg viewBox="0 0 24 24" width="16.25" height="16.25">
+              <div class="user-data">
+                <div>
+                  <span class="og-name"> Elon Musk </span>
+
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="16.25"
+                    height="16.25"
+                    class="tick-icon"
+                  >
                     <g>
                       <path
                         d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"
                       ></path>
                     </g>
                   </svg>
-                </span>
-                <span> @elonmusk </span>
+                </div>
+
+                <span class="og-id"> @elonmusk </span>
               </div>
-              <button>Follow</button>
+              <button class="follow-btn fb-2">Follow</button>
+            </div>
+            <div id="more-trends">
+              <div class="show-more">Show more</div>
             </div>
           </div>
-          <div>Show more</div>
         </section>
       </aside>
     </div>

@@ -108,7 +108,7 @@ body {
   display: grid;
   max-width: 93%;
   margin: auto;
-  grid-template-columns: 1.25fr 3.8fr 1.2fr;
+  grid-template-columns: 1.2fr 3fr 1.7fr;
   grid-gap: 1.5rem;
 }
 
@@ -140,6 +140,7 @@ body {
 #home-title {
   font-size: 1.1rem;
   margin: 0;
+  font-weight: 800;
 }
 
 #title-icon {
@@ -266,8 +267,9 @@ input::placeholder {
   font-size: 0.95rem;
 }
 
-.heading-1 {
+.thead {
   display: flex;
+  justify-content: space-between;
 }
 
 .desc-img {
@@ -278,4 +280,126 @@ input::placeholder {
 
 .trend-title {
   font-weight: bold;
+  font-size: 15px;
+}
+
+.trend-desc {
+  font-size: 13px;
+  color: rgb(91, 112, 131);
+}
+
+.trend-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.trend-nation {
+  font-size: 13px;
+  color: rgb(91, 112, 131);
+}
+
+.trend-tcount {
+  font-size: 13px;
+  color: rgb(91, 112, 131);
+}
+
+.suggest {
+  display: flex;
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.user-data {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.5rem;
+}
+
+.heading h2 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.heading {
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.trending-card {
+  background-color: var(--extra-light-gray);
+  border-radius: 1.5rem;
+  margin-top: 1rem;
+}
+
+.heading-1 {
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.heading-2 {
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid var(--light-gray);
+}
+.heading-3 {
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+#more-trends {
+  padding: 1rem;
+}
+
+.show-more {
+  font-size: 15px;
+  color: var(--twitter-blue);
+  font-weight: 400;
+}
+
+#follow-heading {
+  font-size: 19px;
+  margin: 0;
+  font-weight: 800;
+}
+
+.suggestion-card {
+  background-color: var(--extra-light-gray);
+  border-radius: 1.5rem;
+  margin-top: 1rem;
+}
+
+.heading-title {
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.og-name {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.og-id {
+  color: rgb(91, 112, 131);
+}
+
+.follow-btn {
+  padding: 0rem 1rem;
+  border-radius: 1.5rem;
+  border: 1px solid var(--twitter-blue);
+  color: var(--twitter-blue);
+  font-weight: 800;
+  font-size: 15px;
+  justify-self: center;
+}
+
+.fb-1 {
+  margin-left: 5rem;
+}
+
+.fb-2 {
+  margin-left: 3rem;
+}
+
+.tick-icon {
+  fill: var(--twitter-blue);
 }
